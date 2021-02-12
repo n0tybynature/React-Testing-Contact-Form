@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
+
 const ContactForm = () => {
   const [data, setData] = useState();
   const { register, errors, handleSubmit } = useForm({
@@ -9,6 +10,8 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     setData(data);
   };
+
+
 
   return (
     <div className="App">
